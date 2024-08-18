@@ -104,6 +104,13 @@ def add_miner_args(parser):
         default=True,
     )
 
+    parser.add_argument(
+        "--serve_protocol",
+        type=int,
+        help="Protocol for serving extrinsic",
+        default=4,
+    )
+
 
 def add_validator_args(parser):
     """Add validator specific arguments to the parser."""
